@@ -1,0 +1,82 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org" lang="">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>List of Users</title>-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <h2 class="mt-5">List of Users</h2>-->
+<!--    <a href="http://localhost:8080">Home</a>-->
+
+<!--    &lt;!&ndash; Add a button &ndash;&gt;-->
+<!--    <a th:href="@{/users/add}"-->
+<!--       class="btn btn-primary btn-sm mb-3">-->
+<!--        Add User-->
+<!--    </a>-->
+
+<!--    <table class="table table-bordered mt-3">-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>User ID</th>-->
+<!--            <th>User Name</th>-->
+<!--            <th>Full Name</th>-->
+<!--            <th>Email</th>-->
+<!--            <th>Level</th>-->
+<!--            <th>Position</th>-->
+<!--            <th>Branch</th>-->
+<!--            <th>Trainer</th>-->
+<!--            <th>Role</th>-->
+<!--            <th>Status</th>-->
+<!--            <th>Action</th>-->
+
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr th:each="user : ${users}">-->
+<!--            <td th:text="${user.userId}"></td>-->
+<!--            <td th:text="${user.userName}"></td>-->
+<!--            <td th:text="${user.fullname}"></td>-->
+<!--            <td th:text="${user.email}"></td>-->
+<!--            <td th:text="${user.level}"></td>-->
+<!--            <td th:text="${user.position.name}"></td>-->
+<!--            <td th:text="${user.branch.name}"></td>-->
+<!--            <td th:text="${user.trainer}"></td>-->
+<!--            <td th:text="${user.role}"></td>-->
+<!--            <td th:text="${user.status}"></td>-->
+
+<!--            <td>-->
+<!--                <div class="row">-->
+
+<!--                    <div class="col-small">-->
+<!--                        <form action="#" th:action="@{/users/showFormForUpdate}" method="POST">-->
+
+<!--                            <input type="hidden" name="userId" th:value="${user.userId}" />-->
+<!--                            <button type="submit" class="btn btn-info btn-sm me-1" style="float:left;">Edit</button>-->
+
+<!--                        </form>-->
+
+<!--                        &lt;!&ndash; Add "delete" button/link &ndash;&gt;-->
+<!--                        <form action="#" th:action="@{/users/delete}" method="POST">-->
+
+<!--                            <input type="hidden" name="userId" th:value="${user.userId}" />-->
+<!--                            <button type="submit" class="btn btn-danger btn-sm"-->
+<!--                                    onclick="if (!(confirm('Are you sure you want to delete this user?'))) return false">-->
+<!--                                Delete-->
+<!--                            </button>-->
+
+<!--                        </form>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--</div>-->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+<!--</body>-->
+<!--</html>-->

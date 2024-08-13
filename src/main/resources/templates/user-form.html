@@ -1,0 +1,92 @@
+<!--<!DOCTYPE HTML>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+
+<!--<head>-->
+<!--    &lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">-->
+
+<!--    <title>User Form</title>-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<div class="container">-->
+
+<!--    <h3>User Directory</h3>-->
+<!--    <hr>-->
+
+
+<!--    <form action="#" th:action="@{/users/save}"-->
+<!--          th:object="${users}" method="POST">-->
+
+<!--        &lt;!&ndash; Add hidden form field to handle update &ndash;&gt;-->
+<!--        <input type="number" th:field="*{userId}"-->
+<!--               class="form-control mb-4 w-25" placeholder="ID">-->
+
+<!--        <input type="text"  th:field="*{userName}"-->
+<!--               class="form-control mb-4 w-25" placeholder="User Name">-->
+
+<!--        <input type="text" th:field="*{password}"-->
+<!--               class="form-control mb-4 w-25" placeholder="Password">-->
+
+<!--        <input type="text" th:field="*{fullname}"-->
+<!--               class="form-control mb-4 w-25" placeholder="Full Name">-->
+
+<!--        <input type="text" th:field="*{email}"-->
+<!--               class="form-control mb-4 w-25" placeholder="Email">-->
+
+<!--        <input type="text" th:field="*{level}"-->
+<!--               class="form-control mb-4 w-25" placeholder="Level">-->
+
+<!--        &lt;!&ndash; Thay đổi từ input sang select cho Position &ndash;&gt;-->
+<!--        <select th:field="*{position}"-->
+<!--                class="form-control mb-4 w-25">-->
+<!--            <option value="" disabled selected>Select Position</option>-->
+<!--            <option th:each="position : ${positions}"-->
+<!--                    th:value="${position.position_id}"-->
+<!--                    th:text="${position.name}">Position</option>-->
+<!--        </select>-->
+
+<!--        &lt;!&ndash; Thay đổi từ input sang select cho Branch &ndash;&gt;-->
+<!--        <select th:field="*{branch}"-->
+<!--                class="form-control mb-4 w-25">-->
+<!--            <option value="" disabled selected>Select Branch</option>-->
+<!--            <option th:each="branch : ${branches}"-->
+<!--                    th:value="${branch.branch_id}"-->
+<!--                    th:text="${branch.name}">Branch</option>-->
+<!--        </select>-->
+
+<!--        <input type="text" th:field="*{trainer}"-->
+<!--               class="form-control mb-4 w-25" placeholder="Trainer">-->
+
+<!--        <input type="text" th:field="*{role}"-->
+<!--               class="form-control mb-4 w-25" placeholder="Role">-->
+
+<!--        <input type="text" th:field="*{status}"-->
+<!--               class="form-control mb-4 w-25" placeholder="status">-->
+
+
+<!--        <button type="submit" class="btn btn-info col-2">Submit</button>-->
+
+<!--    </form>-->
+
+<!--    <hr>-->
+<!--    <a th:href="@{/users/list}">Back to Users List</a>-->
+
+<!--</div>-->
+
+
+<!--</body>-->
+
+<!--</html>-->
+
+
+
+
+
+
+
