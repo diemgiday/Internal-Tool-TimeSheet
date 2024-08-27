@@ -13,7 +13,7 @@ public interface UserMapper {
 
      UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
-    User toEntity(AccountRequest accountRequest);
+    User toEntity (AccountRequest accountRequest);
     
     AccountRequest toDto(User user);
     
